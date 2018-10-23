@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/burger-queen/precache-manifest.6eb13d602ebd8a162cdfabc66e27b167.js"
+  "/burger-queen-react/precache-manifest.b1d236e15093f4d7f32e72c2aa0b23e5.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/burger-queen/index.html", {
+workbox.routing.registerNavigationRoute("/burger-queen-react/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });

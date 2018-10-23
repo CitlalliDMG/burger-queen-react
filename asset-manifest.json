@@ -1,15 +1,15 @@
 {
-  "main.css": "/burger-queen/static/css/main.e138650f.chunk.css",
-  "main.js": "/burger-queen/static/js/main.79d4f10c.chunk.js",
-  "main.js.map": "/burger-queen/static/js/main.79d4f10c.chunk.js.map",
-  "static/css/1.86c70862.chunk.css": "/burger-queen/static/css/1.86c70862.chunk.css",
-  "static/js/1.cf7cb7dc.chunk.js": "/burger-queen/static/js/1.cf7cb7dc.chunk.js",
-  "static/js/1.cf7cb7dc.chunk.js.map": "/burger-queen/static/js/1.cf7cb7dc.chunk.js.map",
-  "runtime~main.js": "/burger-queen/static/js/runtime~main.35a1c299.js",
-  "runtime~main.js.map": "/burger-queen/static/js/runtime~main.35a1c299.js.map",
-  "static/css/1.86c70862.chunk.css.map": "/burger-queen/static/css/1.86c70862.chunk.css.map",
-  "static/css/main.e138650f.chunk.css.map": "/burger-queen/static/css/main.e138650f.chunk.css.map",
-  "index.html": "/burger-queen/index.html",
-  "precache-manifest.6eb13d602ebd8a162cdfabc66e27b167.js": "/burger-queen/precache-manifest.6eb13d602ebd8a162cdfabc66e27b167.js",
-  "service-worker.js": "/burger-queen/service-worker.js"
+  "main.css": "/burger-queen-react/static/css/main.e138650f.chunk.css",
+  "main.js": "/burger-queen-react/static/js/main.5c9cc4db.chunk.js",
+  "main.js.map": "/burger-queen-react/static/js/main.5c9cc4db.chunk.js.map",
+  "static/css/1.86c70862.chunk.css": "/burger-queen-react/static/css/1.86c70862.chunk.css",
+  "static/js/1.cf7cb7dc.chunk.js": "/burger-queen-react/static/js/1.cf7cb7dc.chunk.js",
+  "static/js/1.cf7cb7dc.chunk.js.map": "/burger-queen-react/static/js/1.cf7cb7dc.chunk.js.map",
+  "runtime~main.js": "/burger-queen-react/static/js/runtime~main.fcee94e9.js",
+  "runtime~main.js.map": "/burger-queen-react/static/js/runtime~main.fcee94e9.js.map",
+  "static/css/1.86c70862.chunk.css.map": "/burger-queen-react/static/css/1.86c70862.chunk.css.map",
+  "static/css/main.e138650f.chunk.css.map": "/burger-queen-react/static/css/main.e138650f.chunk.css.map",
+  "index.html": "/burger-queen-react/index.html",
+  "precache-manifest.b1d236e15093f4d7f32e72c2aa0b23e5.js": "/burger-queen-react/precache-manifest.b1d236e15093f4d7f32e72c2aa0b23e5.js",
+  "service-worker.js": "/burger-queen-react/service-worker.js"
 }
