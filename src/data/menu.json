@@ -21,16 +21,33 @@
       "category": 0
     },
     {
-      "name": "hamburguesa",
-      "price": {
-        "simple": 10,
-        "doble": 15
-      },
-      "types": [
-        "res",
-        "pollo",
-        "vegetariana"
-      ],
+      "name": "hamburguesa sencilla res",
+      "price": 10,
+      "category": 1
+    },
+    {
+      "name": "hamburguesa sencilla pollo",
+      "price": 10,
+      "category": 1
+    },
+    {
+      "name": "hamburguesa sencilla vegetariana",
+      "price": 10,
+      "category": 1
+    },
+    {
+      "name": "hamburguesa doble res",
+      "price": 15,
+      "category": 1
+    },
+    {
+      "name": "hamburguesa doble pollo",
+      "price": 15,
+      "category": 1
+    },
+    {
+      "name": "hamburguesa doble vegetariana",
+      "price": 15,
       "category": 1
     },
     {
@@ -44,19 +61,23 @@
       "category": 1
     },
     {
-      "name": "agua",
-      "price": {
-        "500ml": 5,
-        "750ml": 8
-      },
+      "name": "agua 500ml",
+      "price": 5,
       "category": 1
     },
     {
-      "name": "refresco",
-      "price": {
-        "500ml": 7,
-        "750ml": 10
-      },
+      "name": "agua 750ml",
+      "price": 8,
+      "category": 1
+    },
+    {
+      "name": "refresco 500ml",
+      "price": 7,
+      "category": 1
+    },
+    {
+      "name": "refresco 750ml",
+      "price": 10,
       "category": 1
     },
     {

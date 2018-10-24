@@ -8,7 +8,7 @@ import * as routes from '../../constants/routes';
 import './SignIn.css'
 
 const SignInPage = ({ history }) =>
-  <div className="container col-8">
+  <div className="center container col-8">
     <h1 className="mb-3">Iniciar sesión</h1>
     <SingInForm history={history} />
     <PasswordForgetLink />

@@ -7,8 +7,9 @@ import withAuthorization from '../../session/withAuthorization';
 const AccountPage = () =>
   <AuthUserContext.Consumer>
     {authUser =>
-      <div>
-        <h1>Account Page</h1>
+      <div className="center container col-8">
+        <h1>Información de perfil</h1>
+        <p>¿Quieres cambiar tu contraseña?</p>
         <PasswordChangeForm />
       </div>
     }

@@ -1,12 +1,15 @@
-.container {
+.center {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container {
   margin: auto;
   background: transparent;
   padding: 65px 0 0 0;
-  text-align: center;
   color: #001f5e;
   border: none;
 }
@@ -36,4 +39,8 @@
   transition: 0.3s;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
+}
+
+.container button:hover {
+  background-color: #74A642;
 }

@@ -6,7 +6,7 @@ import * as routes from '../../constants/routes';
 import './SignUp.css';
 
 const SignUpPage = ({ history }) =>
-  <div className="container col-8">
+  <div className="center container col-8">
     <h1 className="mb-3">Ingresa los datos del nuevo usuario</h1>
     <SignUpForm history={ history } />
   </div>
