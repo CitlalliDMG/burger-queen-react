@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import AuthUserContext from '../../session/AuthUserContext';
 import * as routes from "../../constants/routes";
 import SignOutButton from '../SignOut/SignOut';
+import './Navigation.css';
 
 const Navigation = () =>
   <AuthUserContext.Consumer>
@@ -14,8 +15,8 @@ const Navigation = () =>
   </AuthUserContext.Consumer>
 
 const NavigationAuth = () => (
-<nav className="navbar navbar-expand-lg navbar-light bg-light">
-  <a className="navbar-brand" href="#inicio">Burger Queen</a>
+<nav className="navbar navbar-expand-lg navbar-dark bg-red">
+  <a className="navbar-brand" href={routes.SIGN_IN}>Burger Queen</a>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
   </button>
@@ -37,11 +38,8 @@ const NavigationAuth = () => (
 );
 
 const NavigationNonAuth = () => (
-  <nav className="navbar navbar-expand-lg navbar-light bg-light">
-    <a className="navbar-brand" href="#inicio">Burger Queen</a>
-    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
+  <nav className="navbar navbar-expand-lg navbar-dark bg-red">
+    <a className="navbar-brand" href={routes.SIGN_IN}>Burger Queen</a>
   </nav>
   );
 

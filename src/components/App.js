@@ -11,6 +11,7 @@ import Page404 from "./Page404/Page404";
 
 import * as routes from "../constants/routes";
 import withAuthentication from '../session/withAuthentication';
+import './App.css'
 
 const App = () => {
   return (
