@@ -1,14 +1,15 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import withAuthorization from '../../session/withAuthorization';
-import data from '../../data/menu.json';
-import './Home.css';
+import withAuthorization from "../../session/withAuthorization";
+import data from "../../data/menu.json";
+import "./Home.css";
+
+import MenuDisplay from "../MenuDisplay/MenuDisplay";
 
 console.log(data);
 // const typeOfMenu = Object.values(data.categories);
 
-
-const HomePage = () =>
+const HomePage = () => (
   <div className="container">
     <div className="row">
       <div className="col-md-8">
@@ -23,42 +24,37 @@ const HomePage = () =>
       </div>
     </div>
   </div>
+);
 
 const INITIAL_STATE = {
-  customerName: '',
+  customerName: "",
   // error: null,
   itemsOrdered: []
-}
+};
 
 class CustomerForm extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {...INITIAL_STATE}
+    this.state = { ...INITIAL_STATE };
   }
 
-  onChange = (event) => {
-    this.setState({[event.target.name]: event.target.value})
-  }
+  onChange = event => {
+    this.setState({ [event.target.name]: event.target.value });
+  };
 
-  onSubmit = (event) => {
+  onSubmit = event => {
     event.preventDefault();
 
-    const {
-      customerName
-    } = this.state;
+    const { customerName } = this.state;
 
-    console.log({customerName});
-
-  }
+    console.log({ customerName });
+  };
 
   render() {
-    const {
-      customerName
-    } = this.state;
+    const { customerName } = this.state;
 
-    const isInvalid =
-      customerName.trim() === '';
+    const isInvalid = customerName.trim() === "";
 
     return (
       <form onSubmit={this.onSubmit}>
@@ -79,34 +75,46 @@ class CustomerForm extends Component {
 }
 
 class TakeOrderButtons extends Component {
-  // constructor(props){
-  //   super(props)
-  // }
-
-  selectMenu = (key) => {
-    console.log(key);
+  constructor(props) {
+    super(props);
+    this.state = {
+      menu: null
+    };
   }
+
+  selectMenu = (key, allItems) => {
+    console.log(key);
+    const menuSelectedItems = allItems.filter(item => {
+      return item.category === key;
+    });
+    console.log(menuSelectedItems);
+  };
 
   render() {
     console.log(this.props.data);
-    const typesOfMenu = Object.values(data.categories)
+    const typesOfMenu = Object.values(data.categories);
+
     return (
-      <div className="main-buttons">
-        {typesOfMenu.map((type, index) =>
-          <button className="menu-buttons" onClick={() => this.selectMenu(index)} key={index}>{type.toUpperCase()}</button>
-        )}
+      <div>
+        <div className="main-buttons mb-3">
+          {typesOfMenu.map((type, index) => (
+            <button
+              className="menu-buttons"
+              onClick={() => this.selectMenu(index, data.items)}
+              key={index}
+            >
+              {type.toUpperCase()}
+            </button>
+          ))}
+        </div>
+        <MenuDisplay />
       </div>
     );
   }
 }
 
+export { CustomerForm, TakeOrderButtons };
 
-export {
-  CustomerForm,
-  TakeOrderButtons
-}
-
-
-const authCondition = (authUser) => !!authUser;
+const authCondition = authUser => !!authUser;
 
 export default withAuthorization(authCondition)(HomePage);
