@@ -44,3 +44,12 @@
 .container button:hover {
   background-color: #74A642;
 }
+
+.container button:disabled {
+  background-color: #d3d3d3;
+}
+
+button.menu-buttons {
+  display: inline-block;
+  margin: 0 auto;
+}

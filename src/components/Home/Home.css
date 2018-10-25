@@ -1,0 +1,9 @@
+.container .customer {
+display: inline;
+}
+
+.main-buttons {
+  display: flex;
+  justify-content: center;
+}
+
