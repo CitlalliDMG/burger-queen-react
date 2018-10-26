@@ -49,7 +49,31 @@
   background-color: #d3d3d3;
 }
 
+div .menu {
+  display: flex;
+  display: -webkit-flex; /* Safari */
+  -webkit-flex-flow: row wrap; /* Safari 6.1+ */
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+  height: 350px;
+}
+
 button.menu-buttons {
   display: inline-block;
   margin: 0 auto;
+}
+
+button.option-buttons {
+  background:  #ffb542;
+  margin-bottom: 15px;
+  width: 130px;
+  height: 130px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2%;
+  border-radius: 5px;
 }

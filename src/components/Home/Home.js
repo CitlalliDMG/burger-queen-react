@@ -87,7 +87,8 @@ class TakeOrderButtons extends Component {
     const menuSelectedItems = allItems.filter(item => {
       return item.category === key;
     });
-    console.log(menuSelectedItems);
+    this.setState({menu: menuSelectedItems})
+    //console.log(menuSelectedItems);
   };
 
   render() {
@@ -107,7 +108,7 @@ class TakeOrderButtons extends Component {
             </button>
           ))}
         </div>
-        <MenuDisplay />
+        <MenuDisplay menu={this.state.menu} />
       </div>
     );
   }
