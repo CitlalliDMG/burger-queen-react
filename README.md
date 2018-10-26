@@ -413,9 +413,9 @@ cd burger-queen
 
 #### Hito 1: Tomar pedidos
 
-* [ ] Ingresar nombre del cliente.
-* [ ] Filtrar _menú_ por _desayuno_ y _resto del día_.
-* [ ] Agregar ítem al pedido.
+* [x] Ingresar nombre del cliente.
+* [x] Filtrar _menú_ por _desayuno_ y _resto del día_.
+* [x] Agregar ítem al pedido.
 * [ ] Eliminar ítem del pedido.
 * [ ] Mostrar _resumen_ de pedido con todos los items y el total.
 * [ ] Enviar a cocina (esto debe guardar el pedido).
@@ -428,13 +428,13 @@ cd burger-queen
 
 #### Hito 3: Autenticación
 
-* [ ] Inicio de sesión.
-* [ ] Restaurar contraseña.
+* [x] Inicio de sesión.
+* [x] Restaurar contraseña.
 
 ### UX
 
-* [ ] Se _ve_ bien y _funciona_ bien en tablets.
+* [x] Se _ve_ bien y _funciona_ bien en tablets.
 * [ ] Se puede _agregar a la pantalla de inicio_ como web app (tiene manifest,
   íconos, ...) en iOS y Android.
-* [ ] Uso fácil en pantallas táctiles (touch screens).
-* [ ] Estado actual del pedido siempre visible mientras tomamos un pedido.
+* [x] Uso fácil en pantallas táctiles (touch screens).
+* [x] Estado actual del pedido siempre visible mientras tomamos un pedido.
