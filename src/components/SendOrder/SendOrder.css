@@ -1,0 +1,8 @@
+.card {
+  max-height: 530px;
+}
+
+.order {
+  overflow-y: scroll;
+  max-height: 450px;
+}

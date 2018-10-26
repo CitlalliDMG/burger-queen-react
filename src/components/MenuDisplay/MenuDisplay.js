@@ -1,7 +1,7 @@
 import React from "react";
 
 const MenuDisplay = props => {
-  console.log(props.menu);
+  // console.log(props.menu);
 
   if (props.menu === null) {
     return (

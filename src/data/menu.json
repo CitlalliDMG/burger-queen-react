@@ -21,32 +21,32 @@
       "category": 0
     },
     {
-      "name": "hamburguesa sencilla res",
+      "name": "hamburguesa s res",
       "price": 10,
       "category": 1
     },
     {
-      "name": "hamburguesa sencilla pollo",
+      "name": "hamburguesa s pollo",
       "price": 10,
       "category": 1
     },
     {
-      "name": "hamburguesa sencilla vegetariana",
+      "name": "hamburguesa s vegetariana",
       "price": 10,
       "category": 1
     },
     {
-      "name": "hamburguesa doble res",
+      "name": "hamburguesa d res",
       "price": 15,
       "category": 1
     },
     {
-      "name": "hamburguesa doble pollo",
+      "name": "hamburguesa d pollo",
       "price": 15,
       "category": 1
     },
     {
-      "name": "hamburguesa doble vegetariana",
+      "name": "hamburguesa d vegetariana",
       "price": 15,
       "category": 1
     },

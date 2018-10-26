@@ -1,49 +1,28 @@
 import React, { Component } from 'react';
+import propTypes from 'prop-types';
 
 class CustomerForm extends Component {
-  constructor(props) {
-    super(props);
 
-    this.state = {
-      customerName: "",
-      menu: null,
-      order: []
-    };
+  inputName(event){
+    this.props.getName(event.target.value);
   }
-
-  onChange = event => {
-    this.setState({ [event.target.name]: event.target.value });
-  };
-
-  onSubmit = event => {
-    event.preventDefault();
-
-    const { customerName } = this.state;
-
-    console.log({ customerName });
-  };
 
   render() {
-    const { customerName } = this.state;
-
-    const isInvalid = customerName.trim() === "";
-
     return (
-      <form onSubmit={this.onSubmit}>
+      <section>
         <input
-          name="customerName"
-          value={customerName}
-          onChange={this.onChange}
+          onChange={this.inputName.bind(this)}
           type="text"
-          placeholder="Nombre del cliente"
+          placeholder="Ingresa el nombre del cliente"
           className="customer col-6 mr-5"
         />
-        <button disabled={isInvalid} type="submit" className="customer col-6">
-          Guardar nombre
-        </button>
-      </form>
+      </section>
     );
   }
+}
+
+CustomerForm.propTypes = {
+  inputName: propTypes.func,
 }
 
 export default CustomerForm;
