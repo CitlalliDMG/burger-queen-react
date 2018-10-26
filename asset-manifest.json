@@ -1,7 +1,7 @@
 {
   "main.css": "/burger-queen-react/static/css/main.41ebf49a.chunk.css",
-  "main.js": "/burger-queen-react/static/js/main.287747ea.chunk.js",
-  "main.js.map": "/burger-queen-react/static/js/main.287747ea.chunk.js.map",
+  "main.js": "/burger-queen-react/static/js/main.2bbee1ac.chunk.js",
+  "main.js.map": "/burger-queen-react/static/js/main.2bbee1ac.chunk.js.map",
   "static/css/1.908210c1.chunk.css": "/burger-queen-react/static/css/1.908210c1.chunk.css",
   "static/js/1.2a2933c2.chunk.js": "/burger-queen-react/static/js/1.2a2933c2.chunk.js",
   "static/js/1.2a2933c2.chunk.js.map": "/burger-queen-react/static/js/1.2a2933c2.chunk.js.map",
@@ -10,6 +10,6 @@
   "static/css/1.908210c1.chunk.css.map": "/burger-queen-react/static/css/1.908210c1.chunk.css.map",
   "static/css/main.41ebf49a.chunk.css.map": "/burger-queen-react/static/css/main.41ebf49a.chunk.css.map",
   "index.html": "/burger-queen-react/index.html",
-  "precache-manifest.649378140e73a8fc2ab8b380b9c9345a.js": "/burger-queen-react/precache-manifest.649378140e73a8fc2ab8b380b9c9345a.js",
+  "precache-manifest.26d5a2a05d815f5fab1bf9fe921210e1.js": "/burger-queen-react/precache-manifest.26d5a2a05d815f5fab1bf9fe921210e1.js",
   "service-worker.js": "/burger-queen-react/service-worker.js"
 }
