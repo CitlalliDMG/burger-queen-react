@@ -66,9 +66,10 @@ button.menu-buttons {
 }
 
 button.option-buttons {
-  background:  #ffb542;
+  background:  #f5a732;
+  color: #001f5e;
   margin-bottom: 15px;
-  width: 130px;
+  width: 160px;
   height: 130px;
   text-align: center;
   display: flex;
@@ -76,4 +77,6 @@ button.option-buttons {
   align-items: center;
   padding: 0 2%;
   border-radius: 5px;
+  white-space: pre-wrap;
+  font-size: 1em;
 }

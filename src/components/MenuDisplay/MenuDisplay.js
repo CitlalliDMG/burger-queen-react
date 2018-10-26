@@ -14,8 +14,14 @@ const MenuDisplay = props => {
   return (
     <div className="menu">
       {props.menu.map((item, index) => (
-        <button className="option-buttons" key={index}>
-          {item.name.toUpperCase()}
+        <button
+          className="option-buttons"
+          key={index}
+          price={item.price}
+          name={item.name}
+          onClick={() => props.onClick(item.price, item.name)}
+        >
+          {item.name.toUpperCase()+"\n $" + item.price}
         </button>
       ))}
     </div>
