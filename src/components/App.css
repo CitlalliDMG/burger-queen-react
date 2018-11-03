@@ -80,3 +80,7 @@ button.option-buttons {
   white-space: pre-wrap;
   font-size: 1em;
 }
+
+.bold {
+  font-weight: bold;
+}

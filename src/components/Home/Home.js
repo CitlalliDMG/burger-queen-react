@@ -16,7 +16,8 @@ class HomePage extends Component {
     this.state= {
       customerName: "",
       menu: null,
-      order: []
+      order: [],
+      total: 0
     }
   }
 
@@ -32,7 +33,14 @@ class HomePage extends Component {
     this.setState({
       order:[...this.state.order, {[name.toUpperCase()]:price}]
     })
+    const newTotal = this.state.total + price;
+    this.setState({
+      total: newTotal
+    })
   }
+
+  //Increase the amount in order to the items selected
+  // totalAmount()
 
   render(){
     return (
@@ -46,7 +54,7 @@ class HomePage extends Component {
           </div>
           <div className="col-md-5 mt-3">
             <p>3) Verifica el pedido</p>
-            <SendOrder customerName={this.state.customerName} order={this.state.order} />
+            <SendOrder customerName={this.state.customerName} order={this.state.order} total={this.state.total} />
           </div>
         </div>
       </div>

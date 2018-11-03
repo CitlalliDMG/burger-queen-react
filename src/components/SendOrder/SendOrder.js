@@ -11,7 +11,7 @@ const SendOrder = (props) => {
     <aside className="card">
       <div className="card-body order">
       <p className="card-tittle">Cliente</p>
-      <p className="card-text">{props.customerName}</p>
+      <p className="card-text bold">{props.customerName}</p>
       <hr/>
       {props.order.map((item, index) => (
             <p
@@ -23,7 +23,8 @@ const SendOrder = (props) => {
       </div>
       <div className="card-body">
         <hr/>
-        <p className="card-text">Total:</p>
+        <p className="card-text">Total: {props.total}</p>
+
         <button
           disabled={isInvalid}
         >

@@ -39,7 +39,7 @@ const NavigationAuth = () => (
 
 const NavigationNonAuth = () => (
   <nav className="navbar navbar-expand-lg navbar-dark bg-red">
-    <a className="navbar-brand" href={routes.SIGN_IN}>Burger Queen</a>
+    <a className="navbar-brand" href={process.env.PUBLIC_URL + routes.SIGN_IN}>Burger Queen</a>
   </nav>
   );
 
