@@ -1,5 +1,8 @@
 import React, { Fragment } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 
 import Navigation from "./Navigation/Navigation";
 import SignUpPage from "./SignUp/SignUp";
@@ -12,6 +15,8 @@ import Page404 from "./Page404/Page404";
 import * as routes from "../constants/routes";
 import withAuthentication from '../session/withAuthentication';
 import './App.css'
+
+library.add(fas, faTrashAlt);
 
 const App = () => {
   return (

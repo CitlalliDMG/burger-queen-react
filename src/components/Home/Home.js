@@ -31,7 +31,7 @@ class HomePage extends Component {
   // Set the order state raising the state from the child of TakeOrderButtons
   fromTakeOrderButtons(price, name){
     this.setState({
-      order:[...this.state.order, {[name.toUpperCase()]:price}]
+      order:[...this.state.order, {name:[name.toUpperCase()], price: price}]
     })
     const newTotal = this.state.total + price;
     this.setState({
@@ -39,8 +39,17 @@ class HomePage extends Component {
     })
   }
 
-  //Increase the amount in order to the items selected
-  // totalAmount()
+  //Remove items from the order
+  fromRemoveItemButtons(itemToBeRemoved){
+    const newOrder = [...this.state.order];
+    const removeIndex = newOrder.map(item => {return item.name;}).indexOf(itemToBeRemoved.name);
+    newOrder.splice(removeIndex,1);
+    const newTotal = this.state.total - itemToBeRemoved.price;
+    this.setState({
+      order: newOrder,
+      total: newTotal
+    })
+  }
 
   render(){
     return (
@@ -54,7 +63,7 @@ class HomePage extends Component {
           </div>
           <div className="col-md-5 mt-3">
             <p>3) Verifica el pedido</p>
-            <SendOrder customerName={this.state.customerName} order={this.state.order} total={this.state.total} />
+            <SendOrder customerName={this.state.customerName} order={this.state.order} total={this.state.total} remove={this.fromRemoveItemButtons.bind(this)} />
           </div>
         </div>
       </div>

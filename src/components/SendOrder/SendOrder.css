@@ -6,3 +6,7 @@
   overflow-y: scroll;
   max-height: 450px;
 }
+
+.text-item {
+  font-size: 0.9em;
+}
