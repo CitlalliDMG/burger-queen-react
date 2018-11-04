@@ -400,7 +400,7 @@ cd burger-queen
 * [ ] 80% o más en sección _Performance_.
 * [ ] 80% o más en sección _Progressive Web App_.
 * [ ] 80% o más en sección _Accessibility_.
-* [ ] 80% o más en sección _Best Practices_.
+* [x] 80% o más en sección _Best Practices_.
 
 ### Tests
 
@@ -416,8 +416,8 @@ cd burger-queen
 * [x] Ingresar nombre del cliente.
 * [x] Filtrar _menú_ por _desayuno_ y _resto del día_.
 * [x] Agregar ítem al pedido.
-* [ ] Eliminar ítem del pedido.
-* [ ] Mostrar _resumen_ de pedido con todos los items y el total.
+* [x] Eliminar ítem del pedido.
+* [x] Mostrar _resumen_ de pedido con todos los items y el total.
 * [ ] Enviar a cocina (esto debe guardar el pedido).
 
 #### Hito 2: Ver/atender pedidos
