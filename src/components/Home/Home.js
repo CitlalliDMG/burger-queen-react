@@ -2,8 +2,10 @@ import React, { Component } from "react";
 import swal from 'sweetalert2';
 
 import withAuthorization from "../../session/withAuthorization";
+import { db } from '../../firebase';
 import data from "../../data/menu.json";
 import "./Home.css";
+import AuthUserContext from '../../session/AuthUserContext';
 
 import CustomerForm from "../CustomerForm/CustomerForm";
 import TakeOrderButtons from "../TakeOrderButtons/TakeOrderButtons";
@@ -14,7 +16,6 @@ class HomePage extends Component {
     super();
     this.state = {
       customerName: "",
-      menu: null,
       order: [],
       total: 0
     };
@@ -30,7 +31,7 @@ class HomePage extends Component {
   // Set the order state raising the state from the child of TakeOrderButtons
   fromTakeOrderButtons(price, name) {
     this.setState({
-      order: [...this.state.order, { name: [name.toUpperCase()], price: price }]
+      order: [...this.state.order, { name: name.toUpperCase(), price: price }]
     });
     const newTotal = this.state.total + price;
     this.setState({
@@ -58,7 +59,7 @@ class HomePage extends Component {
   cancelOrder() {
     swal({
       title: '¿Quieres cancelar la orden?',
-      text: "Esta acción no se puede revertir",
+      text: "(Esta acción no se puede revertir)",
       type: 'warning',
       showCancelButton: true,
       confirmButtonColor: '#dc3545',
@@ -80,6 +81,23 @@ class HomePage extends Component {
           confirmButtonColor: '#001f5e'
         })
       }
+    })
+  }
+
+  // Send order to database
+  sendOrder = () => {
+    console.log(this.state);
+    console.log(this.state.order);
+    // db.collection("users").doc('nwanyt0ocYQs3s8uhXSK2exLRc22').collection('orders').add({
+    //   customerName: this.state.customerName,
+    //   order: this.state.order,
+    //   total: this.state.total
+    // })
+    swal({
+      title: "¡Listo!",
+      text: "La orden ha sido enviada'",
+      type: "success",
+      confirmButtonColor: '#001f5e'
     })
   }
 
@@ -107,6 +125,7 @@ class HomePage extends Component {
               total={this.state.total}
               remove={this.fromRemoveItemButtons.bind(this)}
               clearAll={this.cancelOrder.bind(this)}
+              send={this.sendOrder.bind(this)}
             />
           </div>
         </div>
