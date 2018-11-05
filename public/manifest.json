@@ -1,6 +1,6 @@
 {
-  "short_name": "Burger Queen App",
-  "name": "Burger Queen POS App",
+  "short_name": "Burger Queen",
+  "name": "Burger Queen POS",
   "icons": [
     {
       "src": "android-chrome-192x192.png",
@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/?utm_source=homescreen/burger-queen-react",
+  "start_url": "/burger-queen-react",
   "display": "standalone",
   "theme_color": "#ffffff",
   "background_color": "#ffffff"
