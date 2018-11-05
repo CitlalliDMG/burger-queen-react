@@ -11,6 +11,7 @@ class CustomerForm extends Component {
     return (
       <section>
         <input
+          value={this.props.initialName}
           onChange={this.inputName.bind(this)}
           type="text"
           placeholder="Ingresa el nombre del cliente"
