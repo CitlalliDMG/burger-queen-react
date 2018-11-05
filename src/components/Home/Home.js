@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import swal from 'sweetalert2';
 
 import withAuthorization from "../../session/withAuthorization";
-import { db } from '../../firebase';
+// import { db } from '../../firebase';
 import data from "../../data/menu.json";
 import "./Home.css";
-import AuthUserContext from '../../session/AuthUserContext';
+// import AuthUserContext from '../../session/AuthUserContext';
 
 import CustomerForm from "../CustomerForm/CustomerForm";
 import TakeOrderButtons from "../TakeOrderButtons/TakeOrderButtons";
