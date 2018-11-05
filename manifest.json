@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/?utm_source=homescreen",
+  "start_url": "/?utm_source=homescreen/burger-queen-react",
   "display": "standalone",
   "theme_color": "#ffffff",
   "background_color": "#ffffff"
