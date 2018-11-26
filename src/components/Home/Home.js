@@ -2,14 +2,15 @@ import React, { Component } from "react";
 import swal from 'sweetalert2';
 
 import withAuthorization from "../../session/withAuthorization";
-// import { db } from '../../firebase';
+import { db } from '../../firebase';
 import data from "../../data/menu.json";
 import "./Home.css";
-// import AuthUserContext from '../../session/AuthUserContext';
+import AuthUserContext from '../../session/AuthUserContext';
 
 import CustomerForm from "../CustomerForm/CustomerForm";
 import TakeOrderButtons from "../TakeOrderButtons/TakeOrderButtons";
 import SendOrder from "../SendOrder/SendOrder";
+
 
 class HomePage extends Component {
   constructor() {
@@ -85,50 +86,61 @@ class HomePage extends Component {
   }
 
   // Send order to database
-  sendOrder = () => {
+  sendOrder = (employeeUid) => {
     console.log(this.state);
     console.log(this.state.order);
-    // db.collection("users").doc('nwanyt0ocYQs3s8uhXSK2exLRc22').collection('orders').add({
-    //   customerName: this.state.customerName,
-    //   order: this.state.order,
-    //   total: this.state.total
-    // })
-    swal({
-      title: "¡Listo!",
-      text: "La orden ha sido enviada'",
-      type: "success",
-      confirmButtonColor: '#001f5e'
+
+    db.collection("orders").add({
+      order: this.state.order,
+      employee: employeeUid,
+      customerName: this.state.customerName,
+      total: this.state.total,
+      status: "working",
+    })
+    .then(()=> {
+      swal({
+        title: "¡Listo!",
+        text: "La orden ha sido enviada'",
+        type: "success",
+        confirmButtonColor: '#001f5e'
+      })
     })
   }
 
   render() {
     return (
       <div className="container">
-        <div className="row">
-          <div className="col-md-7">
-            <p>1) Ingresa el nombre del cliente</p>
-            <CustomerForm
-              getName={this.fromCustomerForm.bind(this)}
-              initialName={this.state.customerName}
-            />
-            <p>2) Toma la orden</p>
-            <TakeOrderButtons
-              data={data}
-              orderTaked={this.fromTakeOrderButtons.bind(this)}
-            />
-          </div>
-          <div className="col-md-5 mt-3">
-            <p>3) Verifica el pedido</p>
-            <SendOrder
-              customerName={this.state.customerName}
-              order={this.state.order}
-              total={this.state.total}
-              remove={this.fromRemoveItemButtons.bind(this)}
-              clearAll={this.cancelOrder.bind(this)}
-              send={this.sendOrder.bind(this)}
-            />
-          </div>
-        </div>
+        <AuthUserContext.Consumer>
+          {(authUser) => (
+            <div className="row">
+              <div className="col-md-7">
+                <p>1) Ingresa el nombre del cliente</p>
+                <CustomerForm
+                  getName={this.fromCustomerForm.bind(this)}
+                  initialName={this.state.customerName}
+                />
+                <p>2) Toma la orden</p>
+                <TakeOrderButtons
+                  data={data}
+                  orderTaked={this.fromTakeOrderButtons.bind(this)}
+                />
+              </div>
+              <div className="col-md-5 mt-3">
+                <p>3) Verifica el pedido</p>
+                <SendOrder
+                  customerName={this.state.customerName}
+                  order={this.state.order}
+                  employeeUid = {authUser.uid}
+                  total={this.state.total}
+                  remove={this.fromRemoveItemButtons.bind(this)}
+                  clearAll={this.cancelOrder.bind(this)}
+                  send={this.sendOrder.bind(this)}
+                />
+              </div>
+            </div>
+
+          )}
+        </AuthUserContext.Consumer>
       </div>
     );
   }

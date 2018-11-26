@@ -5,6 +5,7 @@ const doCache = false;
 // Name our cache
 const CACHE_NAME = 'my-pwa-cache-v1';
 
+// TO DO: Check this line, I added it to avoid eslint warning
 const self = this;
 
 // Delete old caches that are not our current one!

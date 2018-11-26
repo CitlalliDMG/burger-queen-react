@@ -1,4 +1,4 @@
-.bg-red {
+.bg-background{
   background-color: #F5A732;
 }
 
@@ -15,4 +15,10 @@
 .navbar-dark .navbar-nav .nav-link:active, .navbar-dark .navbar-nav .nav-link:hover {
   color: #fff;
   padding: 1rem;
+}
+
+#logo-navbar {
+  height: 30px;
+  margin-right: 0.5em;
+  vertical-align: bottom;
 }

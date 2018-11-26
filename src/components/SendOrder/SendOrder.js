@@ -55,7 +55,7 @@ class SendOrder extends Component {
           <p className="card-text">
           Items: <span className="bold">{this.props.order.length}</span> - Total: <span className="bold">${this.props.total}</span>
           </p>
-          <button disabled={isInvalid} onClick={e => this.props.send()}>Enviar orden</button>
+          <button disabled={isInvalid} onClick={e => this.props.send(this.props.employeeUid)}>Enviar orden</button>
           <button disabled={withoutOrder} type="button" className="btn-danger mb-0" onClick={e => this.props.clearAll()} >Cancelar orden</button>
         </div>
       </aside>
