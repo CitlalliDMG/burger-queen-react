@@ -8,23 +8,23 @@ self.__precacheManifest = [
     "url": "/burger-queen-react/static/js/runtime~main.fcee94e9.js"
   },
   {
-    "revision": "0d5c29e882c52cb7dbc9",
-    "url": "/burger-queen-react/static/js/main.0d5c29e8.chunk.js"
+    "revision": "45a45c89554a876f2c6d",
+    "url": "/burger-queen-react/static/js/main.45a45c89.chunk.js"
   },
   {
     "revision": "de4d0aa8006193b61983",
     "url": "/burger-queen-react/static/js/1.de4d0aa8.chunk.js"
   },
   {
-    "revision": "0d5c29e882c52cb7dbc9",
-    "url": "/burger-queen-react/static/css/main.7a4f56be.chunk.css"
+    "revision": "45a45c89554a876f2c6d",
+    "url": "/burger-queen-react/static/css/main.00761e6e.chunk.css"
   },
   {
     "revision": "de4d0aa8006193b61983",
     "url": "/burger-queen-react/static/css/1.2592f953.chunk.css"
   },
   {
-    "revision": "473c25528276c527aef88acdfd8e96be",
+    "revision": "741f62010d9b4cb37156b395749058de",
     "url": "/burger-queen-react/index.html"
   }
 ];
