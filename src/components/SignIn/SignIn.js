@@ -5,10 +5,12 @@ import { SignUpLink } from '../SignUp/SignUp';
 import { PasswordForgetLink } from '../PasswordForget/PasswordForget';
 import { auth } from '../../firebase';
 import * as routes from '../../constants/routes';
+import logo from '../../assets/logo-burger-queen.png';
 import './SignIn.css'
 
 const SignInPage = ({ history }) =>
-  <div className="center container col-8">
+  <div className="center container col-8" id="sign-in">
+    <img alt="Burger Queen Logo" src={logo} id="logo-bq"/>
     <h1 className="mb-3">Iniciar sesión</h1>
     <SingInForm history={history} />
     <PasswordForgetLink />

@@ -14,7 +14,6 @@
   border: none;
 }
 
-
 .container input {
   display: block;
   border: 1px solid #ccc;
@@ -27,9 +26,9 @@
 }
 
 .container button {
-  background: #1C3B58;
+  background: #001f5e;
   color: #ffffff;
-  border: 0px;
+  border: 2px solid #001f5e;
   border-radius: 5px;
   padding: 1em;
   display: block;
@@ -42,11 +41,15 @@
 }
 
 .container button:hover {
-  background-color: #74A642;
+  background-color: #85c136;
+  border: 2px solid #85c136;
+  color: #001f5e;
 }
 
 .container button:disabled {
   background-color: #d3d3d3;
+  color: #ffffff;
+  border: 2px solid #d3d3d3;
 }
 
 div .menu {
@@ -67,6 +70,7 @@ button.menu-buttons {
 
 button.option-buttons {
   background:  #f5a732;
+  border: 2px solid #f5a732;
   color: #001f5e;
   margin-bottom: 15px;
   width: 160px;

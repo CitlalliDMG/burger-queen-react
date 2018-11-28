@@ -11,3 +11,8 @@
   font-size: 0.9em;
 }
 
+.card-body .btn-danger:disabled:hover {
+  background-color: #d3d3d3;
+  color: #ffffff;
+  border: 2px solid #d3d3d3;
+}

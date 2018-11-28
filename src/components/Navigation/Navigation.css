@@ -1,19 +1,19 @@
 .bg-background{
-  background-color: #F5A732;
+  background-color: #001f5e;
 }
 
 .navbar-dark .navbar-brand {
-  color: #001f5e;
+  color: #fff;
   font-weight: bold;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #001f5e;
+  color: #ffffff;
   padding: 1rem;
 }
 
 .navbar-dark .navbar-nav .nav-link:active, .navbar-dark .navbar-nav .nav-link:hover {
-  color: #fff;
+  color: #85c136;
   padding: 1rem;
 }
 
@@ -21,4 +21,8 @@
   height: 30px;
   margin-right: 0.5em;
   vertical-align: bottom;
+}
+
+.nav-item:last-child {
+  padding-left: 1em;
 }

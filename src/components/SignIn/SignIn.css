@@ -1,0 +1,17 @@
+#logo-bq {
+  width: 30%;
+}
+
+@media only screen and (max-width: 320px) {
+  #logo-bq {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+@media (orientation: landscape)  and (max-width: 823px)  {
+  #sign-in {
+    margin-top: 150px;
+  }
+}
+

@@ -7,12 +7,18 @@ body {
 .App {
   text-align: center;
 }
+
 .App-header {
-  background-color: #f5a732;
+  background-color: #001f5e;
   height: 60px;
   padding: 20px;
-  color: #001f5e;
+  color: #ffffff;
 }
+
 .App-intro {
   font-size: large;
+}
+
+.App p {
+  color: #001f5e;
 }
